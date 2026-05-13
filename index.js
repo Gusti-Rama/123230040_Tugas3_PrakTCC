@@ -9,7 +9,7 @@ const cors = require("cors");
 
 // Izinkan origin frontend lokal yang umum dipakai saat development
 app.use(cors({
-  origin: ['http://localhost', 'http://localhost:5173', 'http://127.0.0.1:5500'],
+  origin: ['http://localhost', 'http://localhost:5173', 'http://127.0.0.1:5500', 'https://fe-rama-123230040-dot-e-44-488914.uc.r.appspot.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true // Jika butuh kirim cookie/session
 }));
