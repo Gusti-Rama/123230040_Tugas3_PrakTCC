@@ -1,19 +1,19 @@
 # API Testing
-GET http://localhost:3000/ HTTP/1.1
+GET https://backend-rama-73763759634.us-central1.run.app/ HTTP/1.1
 
 ###
 # GET : All Notes
-GET http://localhost:3000/api/v1/notes HTTP/1.1
+GET https://backend-rama-73763759634.us-central1.run.app/api/v1/notes HTTP/1.1
 Content-Type: application/json
 
 ###
 # GET : Note by ID
-GET http://localhost:3000/api/v1/notes/2 HTTP/1.1
+GET https://backend-rama-73763759634.us-central1.run.app/api/v1/notes/4 HTTP/1.1
 Content-Type: application/json
 
 ###
 # POST : Create Note
-POST http://localhost:3000/api/v1/notes HTTP/1.1
+POST https://backend-rama-73763759634.us-central1.run.app/api/v1/notes HTTP/1.1
 Content-Type: application/json
 
 {
@@ -23,17 +23,17 @@ Content-Type: application/json
 
 ###
 # PUT : Update Note
-PUT http://localhost:3000/api/v1/notes/3 HTTP/1.1
+PUT https://backend-rama-73763759634.us-central1.run.app/api/v1/notes/4 HTTP/1.1
 Content-Type: application/json
 
 {
-  "judul": "Note 3 Updated",
-  "isi": "Ini adalah isi dari note 3 yang sudah diperbarui"
+  "judul": "Note 4 Updated",
+  "isi": "Ini adalah isi dari note 4 yang sudah diperbarui"
 }
 
 ###
 # DELETE : Delete Note
-DELETE http://localhost:3000/api/v1/notes/3 HTTP/1.1
+DELETE https://backend-rama-73763759634.us-central1.run.app/api/v1/notes/5 HTTP/1.1
 Content-Type: application/json
 
 
